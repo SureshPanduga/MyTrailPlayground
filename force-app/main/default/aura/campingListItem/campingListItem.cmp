@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="item" type="Camping_Item__c"/>
+    
+    <p>Name:
+        {!v.item.Name}
+    </p>
+    <p>Quantity:
+        {!v.item.Quantity__c}
+    </p>
+    <p>Price:
+        {!v.item.Price__c}
+    </p>
+    <p>Packed?:
+        {!v.item.Packed__c}
+    </p>
+</aura:component>

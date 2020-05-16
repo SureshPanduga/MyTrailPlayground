@@ -1,0 +1,34 @@
+<!--
+  @Component Name     : navigationlwc.html
+  @Description        : 
+  @Author             : supanduga@deloitte.com.acdhsdev1
+  @Group              : 
+  @Last Modified By   : supanduga@deloitte.com.acdhsdev1
+  @Last Modified On   : 7/18/2019, 10:24:36 AM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    7/18/2019, 10:24:36 AM   supanduga@deloitte.com.acdhsdev1     Initial Version
+-->
+<template>
+        <lightning-card title="Navigate To Record Example">
+            <lightning-button label=" New Account" onclick={navigateToNewAccount}></lightning-button>
+            <lightning-button label="View Account" onclick={navigateToViewAccount}></lightning-button>
+            <lightning-button label="Edit Account" onclick={navigateToAccountEdit}></lightning-button>
+        </lightning-card>
+        <lightning-card title="Navigate To Views">
+            <lightning-button label="Account Recent list View" onclick={navigateToList}></lightning-button>
+            <lightning-button label="Account Related List" onclick={navigateToRelatedList}></lightning-button>
+        </lightning-card>
+        <lightning-card title="Navigate To Standard Tab">
+            <lightning-button label="Navigate to Home" onclick={navigateToHome}></lightning-button>
+            <lightning-button label="Navigate to Chatter Home" onclick={navigateToChatter}></lightning-button>
+            <lightning-button label="Navigate to Files " class="slds-m-around_medium" onclick={navigateToFilesHome}></lightning-button>
+        </lightning-card>
+     
+        <lightning-card title="Navigate To Component">
+            <lightning-button label="Navigate to Hello " class="slds-m-around_medium" onclick={navigateToHelloTab}></lightning-button>
+     
+        </lightning-card>
+    </template>

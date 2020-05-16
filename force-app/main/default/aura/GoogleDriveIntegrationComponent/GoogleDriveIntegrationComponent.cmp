@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,lightning:isUrlAddressable" controller="cGoogleAppAuthenticationWithSalesforce">
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+    
+    <lightning:button variant="brand-outline" label="Authenticate" title="Authenticate" onclick="{!c.Authenticate}" />
+</aura:component>

@@ -1,0 +1,24 @@
+<!--
+  @Component Name     : helloWorld.html
+  @Description        : 
+  @Author             : supanduga@deloitte.com.acdhsdev1
+  @Group              : 
+  @Last Modified By   : supanduga@deloitte.com.acdhsdev1
+  @Last Modified On   : 7/15/2019, 11:25:06 AM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    7/15/2019, 10:55:29 AM   supanduga@deloitte.com.acdhsdev1     Initial Version
+-->
+<template>
+    <lightning-card title="Hello">
+        <p>{name}</p>
+        <p>{gender}</p>
+        <p>{recordId}</p>
+
+        <lightning-input value={name} type="text" label="Name Please" onchange={handlename}></lightning-input>
+
+        <lightning-button label="Assign" slot="actions" onclick={handlename}></lightning-button>
+    </lightning-card>
+</template>

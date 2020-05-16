@@ -1,0 +1,29 @@
+<!--
+  @Component Name     : accountViewForm.html
+  @Description        : 
+  @Author             : supanduga@deloitte.com.acdhsdev1
+  @Group              : 
+  @Last Modified By   : supanduga@deloitte.com.acdhsdev1
+  @Last Modified On   : 7/16/2019, 10:32:17 AM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    7/16/2019, 10:27:19 AM   supanduga@deloitte.com.acdhsdev1     Initial Version
+-->
+<template>
+    <lightning-record-view-form
+    record-id={recordId}
+    object-api-name="Account">
+<div class="slds-grid">
+<div class="slds-col slds-size_1-of-2">
+    <lightning-output-field field-name="Name"></lightning-output-field>
+    <lightning-output-field field-name="Owner"></lightning-output-field>
+</div>
+<div class="slds-col slds-size_1-of-2">
+    <lightning-output-field field-name="Type"></lightning-output-field>
+    <lightning-output-field field-name="BillingAddress"></lightning-output-field>
+</div>
+</div>
+</lightning-record-view-form>
+</template>

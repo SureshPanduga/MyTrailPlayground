@@ -1,0 +1,37 @@
+<aura:component controller="SentimentAnalysis_Ctrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="strAnalyse" type="String"/>
+    <aura:attribute name="analysisResponse" type="List"/>
+    
+    <div class="slds-page-header">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
+                            <lightning:icon iconName="standard:bot" alternativeText="Sentiment Analysis" />
+                            <!--<span class="slds-assistive-text"></span>-->
+                        </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate" title="Salesforce Sentiment Analysis">Salesforce Sentiment Analysis</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="slds-page-header__name-meta">Try it out.</p><br/>
+                        <div class="">
+                        	<lightning:textarea name="input1" label="Enter the text to analyse" value="{!v.strAnalyse}"/>
+                            <lightning:button variant="brand" label="Analyse" title="Analyse" onclick="{!c.analyseText}" />
+                        </div><br/>
+                        <div class="slds-text-heading_medium">
+                            <aura:iteration items="{!v.analysisResponse}" var="resp">{!resp}<br/><br/></aura:iteration>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

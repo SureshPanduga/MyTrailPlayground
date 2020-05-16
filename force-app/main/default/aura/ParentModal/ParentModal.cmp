@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="isOpen" type="Boolean" default="false" />
+    
+    <div>
+        <p>
+            <lightning:button type="button" variant="brand" onclick="{!c.openModal}" label="Open Animated Modal" />
+        </p>
+        <c:Modal isOpen="{!v.isOpen}" onclose="{!c.closeModal}" title="Basic Modal">
+            <p>This is an animated modal.</p>
+        </c:Modal>
+    </div>
+</aura:component>
